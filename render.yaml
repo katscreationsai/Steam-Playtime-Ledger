@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: playtime-ledger
+    runtime: node
+    plan: free
+    buildCommand: npm install --include=dev && npm run build
+    startCommand: node server.ts
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.22.0
+      - key: STEAM_API_KEY
+        sync: false

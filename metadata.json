@@ -1,0 +1,6 @@
+{
+  "name": "Playtime Ledger",
+  "description": "Full-stack Steam playtime calculator analyzing total hours, platform splits, and per-game telemetry by Steam URL, SteamID, or custom handle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
